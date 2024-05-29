@@ -80,7 +80,7 @@ if [ $ARCH = "aarch64" ]; then
 		--volume /var/run/dbus:/var/run/dbus \
 		--volume /var/run/avahi-daemon/socket:/var/run/avahi-daemon/socket \
 		--volume /var/run/docker.sock:/var/run/docker.sock \
-		--volume $ROOT/data:/data \
+		--volume /mnt/data:/data \
 		--device /dev/snd \
 		--device /dev/bus/usb \
 		$DATA_VOLUME $DISPLAY_DEVICE $V4L2_DEVICES $I2C_DEVICES $JTOP_SOCKET $EXTRA_FLAGS \

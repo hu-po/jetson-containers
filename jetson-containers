@@ -21,7 +21,8 @@ elif [ "$COMMAND" = "update" ]; then
 elif [ "$COMMAND" = "root" ]; then
 	echo $ROOT
 elif [ "$COMMAND" = "data" ]; then
-	echo $ROOT/data
+	# echo $ROOT/data
+	echo /mnt/data
 else
 	echo ''
 	echo 'jetson-containers > Invalid command'
